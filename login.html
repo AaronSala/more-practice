@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: block;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .container{
+            
+            background-color: rgb(252, 250, 247);
+            width: 40%;
+            float: center;
+            margin-left: 500px;
+            display: block;
+        }
+        .img img{
+            width: 330px;
+            height: 330px;
+            
+           
+           margin-left: 25%;
+           border-radius: 50%;
+        }
+        .form{
+          
+            background-color: rgb(193, 242, 242);
+            height: 700px;
+            margin-top: 30px;
+            padding-top: 30px ;
+            text-align: left;
+            display: block;
+            padding-left: 10px;
+            font-size: 25px;
+
+        }
+        .form button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 90%;
+            font-size:30px ;
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 20px;
+           
+}
+.footer{
+    height: 60px;
+    border-top: rgb(105, 163, 105);
+    text-align: right;
+    padding-top: 30px ;
+    font-size:25px;
+    padding-right: 20px;
+}
+.cansel{
+    float: left;
+    height: 40px;
+    width: 90px;
+    background-color: red;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+    </style>
+    <div id="container" class="container">
+        <form class="form" id="form" name="form" onsubmit="return validated()">
+            <div class="img" background-image="">
+                <img src="../images/download.png">
+                
+              </div>
+          
+        <label for="username"><b>UserName</b></label><br>
+            <input type="text" id="user" name="user" placeholder="Enter username" required><br>
+         <label for="password" ><b>password</b></label> <br>
+            <input type="password" id="pass" name="pass" placeholder="Enter Password" required>
+            <button class="login" id="button" type="submit" onclick="return validate">login</button><br>
+            
+           <label>
+            <input type="checkbox" checked>Remember me
+           </label>
+        </form>
+        <div class="footer">
+            <button class="cansel" id="cancel">cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </div>
+    <script >
+        
+    
+    </script>
+</body>
+</html>
